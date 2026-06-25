@@ -53,10 +53,10 @@ function initSmoothScroll() {
 /* ── 3. Typing animation ── */
 function initTypingAnimation() {
   const words = [
-    'Scalable Backends',
+    'Web Applications',
     'REST APIs',
-    'Full Stack Apps',
-    'Django Projects',
+    'Full Stack Solutions',
+    'Backend Systems',
     'React Frontends',
     'Database Solutions',
     'AI-Powered Tools',
