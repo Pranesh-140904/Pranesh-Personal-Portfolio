@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranesh S — Python Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Pranesh S</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="./Pranesh_S_resume.pdf" class="btn-resume" target="_blank" download="Pranesh_S_resume.pdf">
+          <i class="fas fa-download"></i>
+          <span>Resume</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="line-top">Hi, I'm</span>
+        <span class="line-main">Pranesh S</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">I build </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Python Full Stack Developer passionate about building scalable web applications 
+        using Python, Django, React, and SQL. Based in <strong>Bengaluru, India</strong>, 
+        focused on creating clean, efficient, and user-friendly solutions.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">
+          <span>View My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn-ghost">
+          <span>Let's Talk</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Tech Skills</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="1">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Year Learning</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb-container">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="code-card glass">
+          <div class="code-header">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="code-file">pranesh.py</span>
+          </div>
+          <pre class="code-body"><span class="kw">class</span> <span class="cls">Developer</span>:
+  <span class="kw">def</span> <span class="fn">__init__</span>(self):
+    self.name    = <span class="str">"Pranesh S"</span>
+    self.stack   = [<span class="str">"Python"</span>, <span class="str">"Django"</span>,
+                    <span class="str">"React"</span>, <span class="str">"PostgreSQL"</span>]
+    self.city    = <span class="str">"Bengaluru"</span>
+    self.open_to = <span class="str">"Opportunities"</span>
+
+  <span class="kw">def</span> <span class="fn">build</span>(self, idea):
+    <span class="kw">return</span> idea.<span class="fn">to_product</span>()</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-label"><span>About</span></div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a final-year <strong>Computer Science Engineering</strong> student at 
+          Suguna College of Engineering, Coimbatore — a self-driven developer who moved 
+          to Bengaluru to sharpen full stack skills through hands-on training and real 
+          project work.</p>
+          <p>My focus is on the <strong>Python ecosystem</strong>: writing clean backends 
+          with Django, building RESTful APIs with FastAPI and Flask, and connecting them 
+          to React frontends and PostgreSQL databases.</p>
+          <p>Beyond code, I'm into fitness and structured routines — a discipline that 
+          also shapes how I approach engineering: deliberately, iteratively, and with 
+          consistency.</p>
+          <div class="about-tags">
+            <span class="tag"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</span>
+            <span class="tag"><i class="fas fa-graduation-cap"></i> B.E. CSE</span>
+            <span class="tag"><i class="fas fa-briefcase"></i> Open to Work</span>
+            <span class="tag"><i class="fas fa-code"></i> Backend Focus</span>
+          </div>
+        </div>
+        <div class="about-card glass">
+          <div class="about-card-inner">
+            <div class="profile-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-core">
+                <span class="avatar-initials">PS</span>
+              </div>
+            </div>
+            <h3>Pranesh S</h3>
+            <p class="about-role-tag">Python Full Stack Developer</p>
+            <ul class="about-details">
+              <li><i class="fas fa-envelope"></i> 
+                <a href="mailto:praneshtech1400904@gmail.com">praneshtech1400904@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</li>
+              <li><i class="fab fa-github"></i> 
+                <a href="https://github.com/Pranesh-140904" target="_blank">Pranesh-140904</a>
+              </li>
+            </ul>
+            <div class="about-socials">
+              <a href="https://github.com/Pranesh-140904" target="_blank" class="social-btn">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/pranesh-s-69380426b/" target="_blank" class="social-btn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:praneshtech1400904@gmail.com" class="social-btn">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-label"><span>Skills</span></div>
+      <h2 class="section-title">What I Work With</h2>
+      <div class="skills-grid">
+        <div class="skill-group glass">
+          <div class="skill-group-header">
+            <div class="skill-group-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fas fa-leaf"></i> Django</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fas fa-bolt"></i> Flask / FastAPI</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fas fa-network-wired"></i> REST APIs</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group glass">
+          <div class="skill-group-header">
+            <div class="skill-group-icon"><i class="fas fa-palette"></i></div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fab fa-html5"></i> HTML / CSS</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fab fa-react"></i> React.js</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group glass">
+          <div class="skill-group-header">
+            <div class="skill-group-icon"><i class="fas fa-database"></i></div>
+            <h3>Database &amp; Tools</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fas fa-database"></i> PostgreSQL / OracleSQL</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fas fa-code"></i> SQL</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name"><i class="fab fa-git-alt"></i> Git / GitHub</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span><span class="tech-tag">Django</span>
+        <span class="tech-tag">Flask</span><span class="tech-tag">FastAPI</span>
+        <span class="tech-tag">React.js</span><span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">OracleSQL</span><span class="tech-tag">REST API</span>
+        <span class="tech-tag">Git</span><span class="tech-tag">HTML5</span>
+        <span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">VS Code</span><span class="tech-tag">Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-label"><span>Projects</span></div>
+      <h2 class="section-title">Things I've Built</h2>
+      <div class="projects-grid">
+
+        <!-- Smart Banking System  -->
+        <div class="project-card glass" 
+             data-title="Smart Banking System"
+             data-desc="A full-stack digital banking platform built with Django and SQLite. Features secure account management, transaction history, fund transfers, and an admin dashboard with complete audit logs."
+             data-features="Secure user authentication with session management|Account creation and management|Fund transfer between accounts|Transaction history with filters|Admin dashboard with analytics|SQLite database with optimized queries"
+             data-stack="Django,SQLite,Python,HTML/CSS"
+             data-status="Portfolio Project"
+             data-github="https://github.com/Pranesh-140904"
+             data-demo="">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-university"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pranesh-140904" target="_blank" 
+                 onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" onclick="event.stopPropagation()">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Banking System</h3>
+          <p class="project-desc">A full-stack digital banking platform built with Django 
+          and SQLite. Features secure account management, transaction history, fund 
+          transfers, and an admin dashboard.</p>
+          <div class="project-stack">
+            <span>Django</span><span>SQLite</span><span>Python</span><span>HTML/CSS</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status">
+              <span class="status-dot"></span> Portfolio Project
+            </span>
+            <span class="project-view-btn">View Details →</span>
+          </div>
+        </div>
+
+        <!-- Smart Finance System -->
+        <div class="project-card glass featured"
+             data-title="Smart Finance System"
+             data-desc="Personal finance tracker with budget planning, expense categorization, and visual analytics. Built with Django backend, OracleSQL database, JavaScript and HTML/CSS for a complete finance management solution."
+             data-features="Budget planning and goal setting|Expense categorization with tags|Visual charts and analytics|Django backend with OracleSQL database|JavaScript-powered interactive UI|HTML/CSS responsive design|Complete income and expense tracking"
+             data-stack="Django,JavaScript,OracleSQL,HTML/CSS"
+             data-status="Completed"
+             data-github="https://github.com/Pranesh-140904"
+             data-demo="">
+          <div class="project-glow"></div>
+          <div class="project-badge">Featured</div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pranesh-140904" target="_blank" 
+                 onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" onclick="event.stopPropagation()">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Finance System</h3>
+          <p class="project-desc">Personal finance tracker with budget planning, expense 
+          categorization, and visual analytics. Built with Django, OracleSQL database, 
+          and JavaScript for a complete finance management solution.</p>
+          <div class="project-stack">
+            <span>Django</span><span>JavaScript</span><span>OracleSQL</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status completed">
+              <span class="status-dot"></span> Completed
+            </span>
+            <span class="project-view-btn">View Details →</span>
+          </div>
+        </div>
+        <!-- AdminSight -->
+        <div class="project-card glass"
+             data-title="AdminSight"
+             data-desc="A powerful admin analytics dashboard providing real-time monitoring, user management, role-based access control, and activity logging for enterprise-level control panels."
+             data-features="Real-time monitoring dashboard|User management system|Role-based access control (RBAC)|Activity logging and audit trails|Enterprise-level security|JavaScript-powered UI components"
+             data-stack="Python,Django,MySQL,JavaScript"
+             data-status="Portfolio Project"
+             data-github="https://github.com/Pranesh-140904"
+             data-demo="">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pranesh-140904" target="_blank" 
+                 onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" onclick="event.stopPropagation()">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AdminSight</h3>
+          <p class="project-desc">A powerful admin analytics dashboard providing real-time 
+          monitoring, user management, role-based access control, and activity logging for 
+          enterprise-level control panels.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Django</span><span>MySQL</span><span>JavaScript</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status">
+              <span class="status-dot"></span> Portfolio Project
+            </span>
+            <span class="project-view-btn">View Details →</span>
+          </div>
+        </div>
+
+        <!-- AI Resume Analyser -->
+        <div class="project-card glass"
+             data-title="AI Resume Analyser"
+             data-desc="AI-powered resume analysis tool using Flask and Groq's Llama 3.3 70B model. Parses uploaded resumes, scores them against job descriptions, and returns actionable feedback."
+             data-features="PDF resume parsing and extraction|AI-powered analysis with Groq Llama 3.3 70B|Job description matching and scoring|Actionable improvement feedback|Flask REST API backend|Deployed live on Render"
+             data-stack="Flask,Groq AI,Python,Render"
+             data-status="Live on Render"
+             data-github="https://github.com/Pranesh-140904/ai-resume-analyser"
+             data-demo="https://ai-resume-analyser-j815.onrender.com">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pranesh-140904/ai-resume-analyser" target="_blank" 
+                 onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://ai-resume-analyser-j815.onrender.com" target="_blank" 
+                 onclick="event.stopPropagation()">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Resume Analyser</h3>
+          <p class="project-desc">AI-powered resume analysis tool using Flask and Groq's 
+          Llama 3.3 70B model. Parses uploaded resumes, scores them against job descriptions, 
+          and returns actionable feedback.</p>
+          <div class="project-stack">
+            <span>Flask</span><span>Groq AI</span><span>Python</span><span>Render</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status deployed">
+              <span class="status-dot"></span> Live on Render
+            </span>
+            <span class="project-view-btn">View Details →</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta">
+        <a href="https://github.com/Pranesh-140904" target="_blank" class="btn-ghost">
+          <i class="fab fa-github"></i> <span>See all on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-box glass">
+      <button class="modal-close" id="modalClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <div class="modal-icon" id="modalIcon"></div>
+        <div class="modal-title-wrap">
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <span class="modal-status" id="modalStatus"></span>
+        </div>
+      </div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-features">
+        <h4>Key Features</h4>
+        <ul id="modalFeatures"></ul>
+      </div>
+      <div class="modal-stack-wrap">
+        <h4>Tech Stack</h4>
+        <div class="modal-stack" id="modalStack"></div>
+      </div>
+      <div class="modal-actions">
+        <a href="#" id="modalGithub" target="_blank" class="btn-ghost modal-btn">
+          <i class="fab fa-github"></i> View Code
+        </a>
+        <a href="#" id="modalDemo" target="_blank" class="btn-primary modal-btn">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-label"><span>Services</span></div>
+      <h2 class="section-title">What I Build</h2>
+      <div class="services-grid">
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend Development</h3>
+          <p>Scalable Python backends using Django, Flask, or FastAPI with clean REST APIs, 
+          authentication, database design, and deployment-ready architecture.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Django / FastAPI / Flask</li>
+            <li><i class="fas fa-check"></i> REST API Design</li>
+            <li><i class="fas fa-check"></i> JWT Auth &amp; Security</li>
+            <li><i class="fas fa-check"></i> PostgreSQL / OracleSQL</li>
+          </ul>
+        </div>
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Full Stack Web Apps</h3>
+          <p>End-to-end web applications from database schema to responsive UI — integrating 
+          Python backends with modern React frontends for a complete product.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> React.js Frontends</li>
+            <li><i class="fas fa-check"></i> Django + React Integration</li>
+            <li><i class="fas fa-check"></i> Admin Dashboards</li>
+            <li><i class="fas fa-check"></i> CRUD Applications</li>
+          </ul>
+        </div>
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fas fa-database"></i></div>
+          <h3>Database Design</h3>
+          <p>Efficient, normalized database schemas with complex queries, joins, stored 
+          procedures, and performance optimization for relational databases.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Schema Design &amp; ERDs</li>
+            <li><i class="fas fa-check"></i> PostgreSQL &amp; OracleSQL</li>
+            <li><i class="fas fa-check"></i> Query Optimization</li>
+            <li><i class="fas fa-check"></i> ORM Integration</li>
+          </ul>
+        </div>
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fas fa-code-branch"></i></div>
+          <h3>API Development</h3>
+          <p>RESTful API development and documentation — from designing endpoints and 
+          response schemas to versioning, error handling, and Postman testing.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> RESTful API Design</li>
+            <li><i class="fas fa-check"></i> CRUD Endpoints</li>
+            <li><i class="fas fa-check"></i> Postman Testing</li>
+            <li><i class="fas fa-check"></i> API Documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-label"><span>Contact</span></div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-subtitle">
+        Have a project in mind or want to collaborate? I'm always open to discussing 
+        new opportunities. Reach out through any of these channels!
+      </p>
+
+      <div class="contact-grid">
+        <!-- Left Panel -->
+        <div class="contact-left">
+          <div class="contact-info-card glass">
+            <h3>Ready to build something amazing?</h3>
+            <p>I'm a Python Full Stack Developer based in Bengaluru, India. Whether you 
+            have a startup idea, need a backend system, or want to collaborate on 
+            open-source projects — let's talk!</p>
+            <div class="contact-available">
+              <div class="available-dot-wrap">
+                <span class="available-dot"></span>
+                <span class="available-ping"></span>
+              </div>
+              <div>
+                <p class="available-title">Available for opportunities</p>
+                <p class="available-sub">Open to freelance &amp; full-time roles</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-meta-grid">
+            <div class="contact-meta-item glass">
+              <span class="meta-value">24hrs</span>
+              <span class="meta-label">Response Time</span>
+            </div>
+            <div class="contact-meta-item glass">
+              <span class="meta-value">Bengaluru</span>
+              <span class="meta-label">Location</span>
+            </div>
+            <div class="contact-meta-item glass">
+              <span class="meta-value">IST</span>
+              <span class="meta-label">UTC +5:30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Panel - Contact Links -->
+        <div class="contact-right">
+          <h3 class="contact-links-title">Contact me directly via:</h3>
+          <div class="contact-links-grid">
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/919150876034?text=Hi%20Pranesh!%20I%20saw%20your%20portfolio."
+               target="_blank" class="contact-link-card glass">
+              <div class="cl-icon cl-whatsapp">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="cl-info">
+                <span class="cl-name">WhatsApp</span>
+                <span class="cl-value">+91 87543 33813</span>
+                <span class="cl-desc">Chat with me directly</span>
+              </div>
+              <i class="fas fa-chevron-right cl-arrow"></i>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+9187543 33813" class="contact-link-card glass">
+              <div class="cl-icon cl-phone">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="cl-info">
+                <span class="cl-name">Phone</span>
+                <span class="cl-value">+91 91508 76034</span>
+                <span class="cl-desc">Call me anytime</span>
+              </div>
+              <i class="fas fa-chevron-right cl-arrow"></i>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:praneshtech1400904@gmail.com?subject=Portfolio%20Inquiry"
+               class="contact-link-card glass">
+              <div class="cl-icon cl-email">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="cl-info">
+                <span class="cl-name">Email</span>
+                <span class="cl-value">praneshtech1400904@gmail.com</span>
+                <span class="cl-desc">Send me an email</span>
+              </div>
+              <i class="fas fa-chevron-right cl-arrow"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/pranesh-s-69380426b/" target="_blank"
+               class="contact-link-card glass">
+              <div class="cl-icon cl-linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="cl-info">
+                <span class="cl-name">LinkedIn</span>
+                <span class="cl-value">linkedin.com/in/pranesh-s</span>
+                <span class="cl-desc">Connect professionally</span>
+              </div>
+              <i class="fas fa-chevron-right cl-arrow"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/pranesh_1409" target="_blank"
+               class="contact-link-card glass">
+              <div class="cl-icon cl-instagram">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="cl-info">
+                <span class="cl-name">Instagram</span>
+                <span class="cl-value">@__.king_.maker__</span>
+                <span class="cl-desc">Follow my journey</span>
+              </div>
+              <i class="fas fa-chevron-right cl-arrow"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Pranesh-140904" target="_blank"
+               class="contact-link-card glass">
+              <div class="cl-icon cl-github">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="cl-info">
+                <span class="cl-name">GitHub</span>
+                <span class="cl-value">github.com/Pranesh-140904</span>
+                <span class="cl-desc">Check my repositories</span>
+              </div>
+              <i class="fas fa-chevron-right cl-arrow"></i>
+            </a>
+
+          </div>
+
+          <!-- Copy Email -->
+          <button class="copy-email-btn" id="copyEmailBtn">
+            <i class="fas fa-copy"></i> Click to copy email address
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Pranesh S</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">
+        © 2025 Pranesh S — Built with passion from Bengaluru 
+        <span class="footer-heart">♥</span>
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/Pranesh-140904" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pranesh-s-69380426b/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:praneshtech1400904@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
